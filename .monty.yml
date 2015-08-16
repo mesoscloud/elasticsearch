@@ -1,0 +1,11 @@
+- build: 1.7.1/centos/7
+  image:
+    - mesoscloud/elasticsearch:1.7.1-centos-7
+    - mesoscloud/elasticsearch:1.7.1-centos
+    - mesoscloud/elasticsearch:1.7.1
+    - mesoscloud/elasticsearch:latest
+
+- build: 1.7.1/ubuntu/14.04
+  image:
+    - mesoscloud/elasticsearch:1.7.1-ubuntu-14.04
+    - mesoscloud/elasticsearch:1.7.1-ubuntu
