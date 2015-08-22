@@ -13,14 +13,14 @@ https://www.elastic.co/products/elasticsearch
 e.g.
 
 ```
-docker run -d
+docker run -d \
 --name=elasticsearch --net=host --restart=always mesoscloud/elasticsearch:1.7.1-centos-7
 ```
 
-Use curator to delete entries older than 7 days
+Use curator to delete entries older than 7 days:
 
 ```
-docker run -it --net=host --rm mesoscloud/elasticsearch:1.7.1-centos-7 curator delete indices --older-than 7 --time-unit days --timestring %Y.%m.%d  --all-indices
+docker run -it --net=host --rm mesoscloud/elasticsearch:1.7.1-centos-7 curator delete indices --older-than 7 --time-unit days --timestring %Y.%m.%d
 ```
 
 ## Ubuntu
@@ -30,12 +30,12 @@ docker run -it --net=host --rm mesoscloud/elasticsearch:1.7.1-centos-7 curator d
 e.g.
 
 ```
-docker run -d
+docker run -d \
 --name=elasticsearch --net=host --restart=always mesoscloud/elasticsearch:1.7.1-ubuntu-14.04
 ```
 
-Use curator to delete entries older than 7 days
+Use curator to delete entries older than 7 days:
 
 ```
-docker run -it --net=host --rm mesoscloud/elasticsearch:1.7.1-ubuntu-14.04 curator delete indices --older-than 7 --time-unit days --timestring %Y.%m.%d  --all-indices
+docker run -it --net=host --rm mesoscloud/elasticsearch:1.7.1-ubuntu-14.04 curator delete indices --older-than 7 --time-unit days --timestring %Y.%m.%d
 ```
